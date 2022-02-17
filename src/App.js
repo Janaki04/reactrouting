@@ -6,6 +6,7 @@ import Contact from "./Component/Contact";
 import Support from "./Component/Support";
 import Career from "./Component/Career";
 import Error from "./Component/Error";
+import Student from './Component/Student';
 
 
  
@@ -18,9 +19,12 @@ function App() {
       <Routes>
      <Route path="/" element={<Home/>}/>
      <Route path="/home" element={<Home/>}/>
+     <Route path="/student/:id" element={<Student/>}/>
+
      <Route path="/contact" element={<Contact/>}/>
      <Route path="/support" element={<Support/>}/>
      <Route path="/career" element={<Career/>}/>
+
      <Route path="/*" element={<Error/>}/>
 
 
